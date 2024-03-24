@@ -1,0 +1,113 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing :border-box;
+    font-family:'Gilroy';
+
+}
+html,body{
+    height :100%;
+    width:100%;
+}
+#main{
+    height:100%;
+    width:100%;
+    background-color:rgb(255, 255, 255);
+
+}
+#nav{
+    height:70px;
+     width:100%;
+    
+    display: flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:30px; 
+    padding: 0 30px;
+
+
+}
+/* to add icons there is a website called ........remix icons...........*/
+#nav h4{
+    font-size: 20px;
+    font-weight:600;
+}
+#nav i{
+    /*icons mai bhi same font wale hi istmal hote hai sarre features  */
+    background-color: black;
+    color: white;
+    font-size:20px;
+    padding:10px;/* so padding toh to pheli batt usspe lagta hai jiske children pe humee gap chaiye isse div move nhi krta bss uspe boundry add on ho jati hai*/
+    border-radius:50px;/*border radious.......... 50 px ya 50% ..........karte hi wo pura............ circle......... ho jayega */
+     font-weight:500;
+}
+#center{
+   
+    width:100%;
+    /*background-color:red;*/
+    padding: 40px 80px;
+}
+#center h1{
+    font-size:80px;
+    font-weight:500;/*font weight toh ptla karne ke kam aata hai */
+/*ak >>>>>>>>>line height <<<<<<<<< property hoti hai jo line ke beech mai height ko define karti hai */
+line-height:80px;
+}
+#center-in{
+   
+    margin-top:50px;
+    width:100%;
+    display:flex;/*flex use hoga apne sabhi children ko line mai lanne ke liye */
+    justify-content:space-between;
+   
+}
+#center-in p{
+    font-size:22px;
+    font-weight:600;
+    line-height:32px;
+
+}
+#right{
+    width:20%;
+}
+.elem{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+ 
+    padding:10px 0;
+    border-top:2px solid black;
+}
+.elem i{
+    font-size:20px;
+    font-weight:500;
+    opacity: 0;/*opacity mtlb wo kitna visual hoga ye hover wali property ke phele kisi bhi icon pe karna padega
+    hover- mtlb jab mouse leke aunga tab kya hoga*/
+}
+.elem a{
+    color:black;
+    text-decoration:none;/*ye a tag ke niche wali line hatane ke kam aate hai */
+font-weight:600;
+font-size:20px;
+
+
+}
+.elem:hover i{/*parent pe hover karenge toh
+    uske child pe asar dikega iska ye mtlb hai */
+opacity:1;
+}
+.elem:hover{/*mtlbh hai elem pe jab hover leke jaunga tob ye karna */
+    background-color: rgb(243,243,243);
+}
+.elem:hover a{
+    text-decoration: underline;
+}
+#bottom{
+    background-color:red;
+    height:45%;
+    width:100%;
+    background-image: url(https://images.unsplash.com/photo-1707343848610-16f9afe1ae23?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+/*backgroudn image tag use to insert background images*/
+background-size:cover;
+background-position:0 30;
+}
